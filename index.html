@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=#, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap" rel="stylesheet">
-    <title>Cool Font</title>
+    <title>Document</title>
 </head>
 <body>
-<video src="videos/jin.mp4" autoplay="" muted""></video>
+<video src="videos/jin.mp4" id="myVideo" ></video>
     <h2><span> We</span> are The M<span>ost</span> Powerfull in DCI</h2>
-    
+
+
+  <script type="text/javascript">
+    setTimeout(function(){
+      document.getElementById("myVideo").play();
+      console.log('your audio is started just now');
+    },500)</script>
 </body>
 </html>
