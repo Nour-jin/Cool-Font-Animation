@@ -12,11 +12,13 @@
     <h2 id="myTitle"><span> We</span> are The M<span>ost</span> Powerfull in DCI</h2>
 
 
-  <script type="text/javascript">
-    setTimeout(function(){
-      document.getElementById("myVideo").play();
-      console.log('your audio is started just now');
-    },3000);
+  <script>
+    var video = document.getElementById("myVideo");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 3000);
+});
 
     </script>
 
